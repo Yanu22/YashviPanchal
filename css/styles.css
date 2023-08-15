@@ -420,12 +420,12 @@ h2{
         border-radius: 150px;
     }
     .intro-container h1 {
-        font-size: 18px; /* Increase the font size for the heading */
+        font-size: 15px; /* Increase the font size for the heading */
         line-height: 1.6;
     }
     
     .intro-container p {
-        font-size: 15px; /* Increase the font size for the paragraph */
+        font-size: 12px; /* Increase the font size for the paragraph */
     }
 
     .profile-image {
@@ -438,7 +438,7 @@ h2{
     
     .about-content {
         flex: 3;
-        margin-right: 5px;
+        margin-right: 2px;
     }
 
     .images img {
