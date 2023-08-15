@@ -1,0 +1,454 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Global styles */
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-name {
+    text-decoration: none;
+    color: #333;
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+}
+
+.nav-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-right li {
+    margin-left: 1.5rem;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+/* Your existing styles... */
+
+nav ul li a:hover {
+    text-decoration: none; /* Remove default underline */
+    position: relative;
+}
+
+nav ul li a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust the line's position as needed */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the line's thickness */
+    background-color: #f06; /* Set your preferred line color */
+}
+
+/* Add this part to create the underline effect on hover */
+nav ul li a:hover {
+    text-decoration: none; /* Remove default underline */
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+
+
+
+/* header and footer css */
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    color: rgb(49, 49, 49);
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* landing page */
+
+.landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.intro-container {
+    flex: 1;
+    padding: 3rem;
+}
+
+.intro-container h1 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.change-color {
+    color: #333;
+    transition: color 0.3s;
+}
+
+.change-color:hover {
+    color: #f06;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #f06, #90f);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.image-container img {
+    display: flex;
+    width: 85%;
+    height: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h2{
+    font-size:xx-large
+}
+
+.aboutpic{
+    width: 20px;
+    height: auto;
+}
+
+/* Your existing styles ... */
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 70vh;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 2;
+    margin-right: 100px;
+}
+
+/* Your existing styles ... */
+
+/* Your existing styles... */
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    padding: 2rem;
+    min-height: 70vh;
+    background-color: #f4f4f4;
+}
+
+.intro-container {
+    flex: 1;
+    padding: 3rem;
+    max-width: 800px; /* Set a maximum width for better readability */
+    text-align: left; /* Center-align the content */
+}
+
+.intro-container h1 {
+    font-size: 28px; /* Increase the font size for the heading */
+    line-height: 1.6;
+}
+
+.intro-container p {
+    font-size: 18px; /* Increase the font size for the paragraph */
+}
+
+/* Your existing styles ... */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wave-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #333;
+}
+
+.social-icon:hover{
+    font-size: 30px;
+    margin: 0 10px;
+    color: #f06;
+}
+
+/* Your existing styles ... */
+
+.portfolio-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.portfolio-category {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.portfolio-category a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    opacity: 0.7; /* Set initial opacity */
+    transition: opacity 0.3s;
+}
+
+.portfolio-category a:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.portfolio-category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-category img {
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Your existing styles ... */
+
+.portfolio-page {
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.portfolio-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-subtitle {
+    font-size: 1rem;
+    color: #888;
+}
+
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.portfolio-column {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.images img {
+    width: 97%;
+    height: auto;
+    flex: 2;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.portfolio-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-images {
+    display: flex;
+    justify-content: space-between;
+    margin: -0.5rem;
+}
+
+.portfolio-images img {
+    width: 30%;
+    border-radius: 5px;
+    margin: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-list li {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1.5rem;
+}
+
+.project-list p {
+    margin-top: 0.5rem;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-right ul {
+        display: none; /* Hide the navigation links on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust as needed */
+        right: 20px;
+        width: 60%;
+        background-color: #ffffff;
+        z-index: 1;
+        border-radius: 20px;
+    }
+
+    .nav-right ul.active {
+        display: flex;
+    }
+
+    .nav-right li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon on smaller screens */
+    }
+
+    /* Style the bars to look like a hamburger icon */
+    .bar {
+        width: 10px;
+        height: 25px;
+        background-color: #f06; /* Set a background color for the bars */
+        margin: 3px 0;
+        cursor: pointer;
+        border-radius: 150px;
+    }
+    .intro-container h1 {
+        font-size: 18px; /* Increase the font size for the heading */
+        line-height: 1.6;
+    }
+    
+    .intro-container p {
+        font-size: 15px; /* Increase the font size for the paragraph */
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about-content {
+        flex: 3;
+        margin-right: 5px;
+    }
+
+    .images img {
+        width: 100%;
+        flex: 1;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
