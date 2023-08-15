@@ -384,7 +384,7 @@ h2{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .nav-right ul {
         display: none; /* Hide the navigation links on smaller screens */
         flex-direction: column;
